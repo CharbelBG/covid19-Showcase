@@ -1,14 +1,16 @@
+@font-face {
+  font-family: 'Gelion';
+  src: url('../assets/Gelion Regular.ttf');
+}
 /*CSS reset*/
 *,*::before,*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-@font-face {
-  font-family: 'Gelion';
-  src: url('../assets/Gelion Regular.ttf');
+  font-family: Gelion;    
 }
 :root{
   --greenColor: #035755;
   --redColor: #FB4C47;
+  --lightRedColor: #fa555242;
 } 

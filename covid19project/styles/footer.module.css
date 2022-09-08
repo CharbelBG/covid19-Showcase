@@ -1,0 +1,7 @@
+.footer{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 76%;
+    margin: auto;
+}

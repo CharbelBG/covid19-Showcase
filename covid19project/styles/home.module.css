@@ -1,0 +1,95 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12%;
+    margin-bottom:1rem ;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 26.7rem;
+    gap:1rem;
+}
+.text h3, .text h2{
+    color: var(--redColor);
+}
+.text h1{
+    color: var(--greenColor);
+}
+
+.text button{
+    color: white;
+    background-color: var(--redColor);
+    width: 15.6rem;
+    padding:1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    z-index: 1;
+}
+/*Adding pulse animation*/
+.text button::before{
+    background-color: var(--redColor);
+    border-radius: 2rem;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -4;
+}
+.text button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 2px 25px var(--greenColor);
+    transition: .2s;
+}
+.text button:hover::before{
+    opacity: 0;
+    transform: scale(150%);
+    transition: .2s;
+}
+.text button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 10px var(--greenColor);
+    transition: .2s;
+}
+
+.imageSection{
+    overflow: hidden;
+}
+.imageSection img{
+    width: 62rem;
+}
+
+/*the about styles*/
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10rem;
+    background-image: url('../public/illustration3.png');
+    background-repeat: no-repeat;
+    background-size: 12rem;
+    background-position: 106% 100%;
+}
+.about img{
+    height: 25rem;
+}
+.about button{
+    background-color: var(--lightRedColor);
+    color: var(--redColor);
+    width: 12rem;
+}
+.about button::before{
+    background-color: var(--lightRedColor);
+}
+
+
+
