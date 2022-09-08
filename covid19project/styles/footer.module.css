@@ -1,7 +1,34 @@
+.footerWrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 .footer{
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
-    width: 76%;
-    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer img{
+    width: 220px;
+}
+.links{
+    color: var(--greenColor);
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    cursor: pointer;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.social img{
+    height:1rem;
+    width: auto;
+    cursor: pointer;
 }
