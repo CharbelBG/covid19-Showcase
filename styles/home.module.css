@@ -24,7 +24,6 @@
 .text p{
     font-size: medium;
 }
-/*Refactor and make it simpler and only switch color*/
 .text button{
     margin-top: 2rem;
     color: white;
@@ -40,7 +39,6 @@
     z-index: 1;
     border: 2px solid var(--redColor);
 }
-/*Simple hover animation*/
 .text button:hover{
     background-color: white;
     color: var(--redColor);
@@ -52,7 +50,6 @@
     right:-50px;
 }
 
-/*the about styles*/
 
 .about{
     display: flex;

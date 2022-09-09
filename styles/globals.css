@@ -2,7 +2,6 @@
   font-family: 'Gelion';
   src: url('../assets/Gelion Regular.ttf');
 }
-/*CSS reset*/
 *,*::before,*::after {
   box-sizing: border-box;
   margin: 0;

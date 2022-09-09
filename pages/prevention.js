@@ -3,11 +3,6 @@ import styles from '../styles/prevention.module.css';
 import SectionHeader from '../src/components/SectionHeader';
 import PreventionText from '../src/components/PreventionText';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-/**Each one will be devided into text and image. (swap locations here)
- * 
- * Create a text component (blueprint) and use it here.
- * 
- */
 
 export default function prevention(){
     return(
@@ -17,7 +12,6 @@ export default function prevention(){
             There are many different kinds, and some cause disease.
              A newly identified type has caused'/>
 
-            {/* add text and image in this div */}
                 <div className={styles.textAndImg}>
                     <PreventionText number='01' 
                     title='Wear Masks'
@@ -67,7 +61,6 @@ export default function prevention(){
                      fully tested meta-services. Competently pursue standards compliant
                       leadership skills vis-a-vis pandemic'/>
                 </div>
-                {/* adding the images in the background */}
                 <LazyLoadImage className={styles.backgroundImg} src ='/background2.png' width={277} height={287}
                  placeholderSrc='/low/background2.avif' />
                   <LazyLoadImage className={styles.backgroundImg2} src ='/background3.png'

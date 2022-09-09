@@ -27,9 +27,8 @@
     z-index: 10;
     cursor: pointer;
 }
-/*Adding Hover animations*/
 .card::before{
-    /* border-radius: 0 0 1rem 1rem; */
+   
     content: '';
     position: absolute;
     width: 100%;

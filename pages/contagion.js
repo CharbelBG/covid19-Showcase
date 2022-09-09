@@ -9,10 +9,8 @@ export default function contagion(){
             <SectionHeader title='Contagion'
              paragraph='Corona viruses are a type of virus. There are many different kinds, 
              and some cause disease. A newly identified type' />
-            {/* Create a contagion card component and render it */}
             <div className={styles.cardsWrapper}>
                 <div className={styles.card}>
-                    {/* x  height={334} */}
                 <LazyLoadImage src = '/illustration4.png' width={269.5} height={256}
                     placeholderSrc='/low/illustration4.avif' />
                     <h2>Air Transmission</h2>

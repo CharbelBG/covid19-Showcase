@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '../../styles/footer.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Footer(){
-    //devided into 3 parts 
     return(
     <div className={styles.footerWrapper}>  
       

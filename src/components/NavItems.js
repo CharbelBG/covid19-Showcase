@@ -18,7 +18,6 @@ export default function NavItems(){
 
     return(
         <nav className={styles.nav}>
-            {/* <img src='/Logo.png' /> */}
             <LazyLoadImage src = '/Logo.png'
             placeholderSrc='/low/Logo.avif'
             alt="Image alt"/>

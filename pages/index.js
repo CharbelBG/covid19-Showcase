@@ -25,14 +25,12 @@ export default function Home() {
         </div>
 
         <div className={styles.imageSection}>
-          {/* <img src='/illustration1.png' /> */}
           <LazyLoadImage src = '/illustration1.png' width={880} height={607}
          placeholderSrc='/low/illustration1.avif'
          alt="Image alt"/>
         </div>
       </div>
-     
-    {/* Another Section */}
+    
       <div className={styles.about}>
           <div>
             <LazyLoadImage src = '/illustration2.png' width={400} height={427} 

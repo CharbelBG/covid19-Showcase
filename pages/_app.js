@@ -5,7 +5,6 @@ function MyApp({ Component, pageProps }) {
   return <>
     <NavItems />
     <Component {...pageProps} />
-    {/* replace with an actual footer */}
     <Footer />
   </>
 }

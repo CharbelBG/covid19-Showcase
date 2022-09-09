@@ -19,7 +19,6 @@
     align-items: center;
     position: relative;
 }
-/*hover animations*/
 
 .navItems div{
     position: relative;
@@ -41,7 +40,6 @@
     transition: .2s;
 }
  
-/*small circle*/
 .active{
     color: var(--redColor);
     position: relative;
