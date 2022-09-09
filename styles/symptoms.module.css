@@ -1,0 +1,7 @@
+.mainImage{
+    width: fit-content;
+    margin: auto;
+}
+.mainImage img{
+    height:40rem;
+}
