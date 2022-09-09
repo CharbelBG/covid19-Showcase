@@ -1,0 +1,20 @@
+.preventionText{
+    max-width: 33.25rem;
+}
+.preventionText h1{
+    color: var(--greenColor);
+}
+.preventionText h1::before{
+    content: attr(data-before);
+    background-color: var(--lightRedColor);
+    color: var(--redColor);
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+    padding: .5rem;
+    margin-right: 2rem;
+}
+.preventionText p{
+    margin-left: 5rem;
+    color: var(--lightDarkColor);
+}

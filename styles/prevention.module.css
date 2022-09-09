@@ -1,0 +1,28 @@
+.prevention{
+    margin-bottom: 60px;
+    position: relative;
+}
+.textAndImg{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.textAndImg:not(:first-of-type){
+    margin-bottom: -50px;
+}
+.textAndImg img{
+    width: 30rem;
+}
+.backgroundImg:first-of-type{
+    position: absolute;
+    top:550px;
+    left:-130px;
+}
+.backgroundImg2{
+    position: absolute;
+    right: 0;
+    bottom:400px;
+    right: -100px;
+    height: 20rem;
+}
