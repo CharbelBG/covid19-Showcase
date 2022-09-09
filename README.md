@@ -2,10 +2,6 @@
 
 This Project was developed to help  spreading awareness against covid19.
 
-## Live Link
-https://charbelboughazalecovid19.netlify.app
-
-
 
 # Development
 
