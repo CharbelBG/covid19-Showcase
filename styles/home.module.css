@@ -47,10 +47,9 @@
     transition: .2s;
 }
 
-.imageSection img{
+.imageSection{
     position: relative;
     right:-50px;
-    width: 55rem;
 }
 
 /*the about styles*/
