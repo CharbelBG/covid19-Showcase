@@ -2,26 +2,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 12%;
-    margin-bottom:1rem ;
+    justify-content: center;
+    margin-bottom:1rem;
+    font-size: larger;
+    overflow: hidden;
 }
 .text{
+    margin-left:250px;
     display: flex;
     flex-direction: column;
-    max-width: 26.7rem;
-    gap:1rem;
+    min-width: 28rem;
+    gap:.5rem;
+    color: var(--lightDarkColor);
 }
-.text h3, .text h2{
+.text h3, .text h2 , .aboutText h3{
     color: var(--redColor);
 }
-.text h1{
+.text h1, .aboutText h1{
     color: var(--greenColor);
 }
-
+.text p{
+    font-size: medium;
+}
+/*Refactor and make it simpler and only switch color*/
 .text button{
+    margin-top: 2rem;
     color: white;
     background-color: var(--redColor);
-    width: 15.6rem;
+    width: 10.6rem;
+    font-size: large;
     padding:1rem;
     border: none;
     border-radius: 2rem;
@@ -29,45 +38,23 @@
     transition: .2s;
     position: relative;
     z-index: 1;
+    border: 2px solid var(--redColor);
 }
-/*Adding pulse animation*/
-.text button::before{
-    background-color: var(--redColor);
-    border-radius: 2rem;
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top:0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -4;
-}
+/*Simple hover animation*/
 .text button:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 2px 25px var(--greenColor);
-    transition: .2s;
-}
-.text button:hover::before{
-    opacity: 0;
-    transform: scale(150%);
-    transition: .2s;
-}
-.text button:active{
-    transform: translateY(-1px);
-    box-shadow: 0 1px 10px var(--greenColor);
+    background-color: white;
+    color: var(--redColor);
     transition: .2s;
 }
 
-.imageSection{
-    overflow: hidden;
-}
 .imageSection img{
-    width: 62rem;
+    position: relative;
+    right:-50px;
+    width: 55rem;
 }
 
 /*the about styles*/
+
 .about{
     display: flex;
     flex-direction: row;
@@ -79,17 +66,30 @@
     background-size: 12rem;
     background-position: 106% 100%;
 }
+.aboutText{
+    max-width: 31rem;
+}
+.aboutText p{
+    line-height: 2;
+    color: var(--lightDarkColor);
+}
+.aboutText button{
+    background-color: var(--lightRedColor);
+    color: var(--redColor);
+    width: 10rem;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius:2rem;
+    font-size: large;
+    transition: .2s;
+}
+.aboutText button:hover{
+   color: white;
+   background-color: var(--redColor);
+   transition: .2s;
+}
 .about img{
     height: 25rem;
 }
-.about button{
-    background-color: var(--lightRedColor);
-    color: var(--redColor);
-    width: 12rem;
-}
-.about button::before{
-    background-color: var(--lightRedColor);
-}
-
-
-

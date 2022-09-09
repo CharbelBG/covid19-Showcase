@@ -1,7 +1,7 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/home.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div className={styles.text}>
-        <h3>COVID-19 Alert</h3>
+        <h2>COVID-19 Alert</h2>
         <h1>Stay At Home Quarantine To Stop Corona Virus</h1>
         <p>
           There is No Specific Medicine To Prevent Or Treat Coronavirus 
@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className={styles.imageSection}>
           {/* <img src='/illustration1.png' /> */}
-          <LazyLoadImage src = '/illustration1.png' width={992}  height={684}
+          <LazyLoadImage src = '/illustration1.png' width={880} height={607}
          placeholderSrc='/low/illustration1.avif'
          alt="Image alt"/>
         </div>
@@ -40,8 +40,8 @@ export default function Home() {
              alt="Image alt"/>
             </div>
           
-          <div className={styles.text}>
-            <h2>What is Covid-19</h2>
+          <div className={styles.aboutText}>
+            <h3>What is Covid-19</h3>
             <h1>Coronavirus</h1>
             <p>Corona viruses are a type of virus. There are many different kinds, 
               and some cause disease. A newly identified type has caused a recent 

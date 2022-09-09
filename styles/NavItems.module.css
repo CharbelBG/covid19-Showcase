@@ -32,7 +32,7 @@
     transition: .2s;
     opacity: 0;
 }
-.navItems div:not(.active):hover::before{
+.navItems div:hover::before{
     content: "•";
     position: absolute;
     top:150%;
@@ -46,12 +46,6 @@
     color: var(--redColor);
     position: relative;
 }
-.active::after{
-    content: '•';
-    position: absolute;
-    top: 150%;
-    right:50%;
-}
 
 
 .nav button{
@@ -63,6 +57,7 @@
     cursor: pointer;
     border-radius: 5rem;
     transition: .2s;
+    font-size: large;
 }
 .nav button:hover{
     color: white;
