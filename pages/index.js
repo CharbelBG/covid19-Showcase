@@ -35,8 +35,7 @@ export default function Home() {
     {/* Another Section */}
       <div className={styles.about}>
           <div>
-            {/* <img src='/illustration2.png' /> */}
-            <LazyLoadImage src = '/illustration2.png' 
+            <LazyLoadImage src = '/illustration2.png' width={400} height={427} 
              placeholderSrc='/low/illustration2.avif'
              alt="Image alt"/>
             </div>

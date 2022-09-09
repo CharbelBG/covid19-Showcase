@@ -1,0 +1,58 @@
+.cardsWrapper{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: auto;
+    width: 85%;
+    padding:2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    background-color: white;
+    border-radius:1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 28rem;
+    height: 35rem;
+    padding: 4rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.272);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+/*Adding Hover animations*/
+.card::before{
+    border-radius: 0 0 1rem 1rem;
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    height: 10px;
+    background-color: var(--redColor);
+    transform: scaleX(0);
+    transition: .2s;
+    transform-origin: left;
+}
+.card:hover::before{
+    transform: scaleX(100%);
+    transition: .2s
+}
+
+.card img{
+    width: 16rem;
+}
+.card h2{
+    color: var(--greenColor);
+}
+.background{
+    z-index: -12;
+    position: absolute;
+    bottom: -100px;
+}
