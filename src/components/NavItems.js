@@ -3,7 +3,7 @@ import {NavLinks} from '../utils/navdata';
 import Link from 'next/link';
 import styles from '../../styles/NavItems.module.css';
 import { useRouter } from 'next/router';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function NavItems(){
     const router = useRouter();
@@ -18,7 +18,10 @@ export default function NavItems(){
 
     return(
         <nav className={styles.nav}>
-            <img src='/Logo.svg' />
+            {/* <img src='/Logo.png' /> */}
+            <LazyLoadImage src = '/Logo.png'
+            placeholderSrc='/low/Logo.avif'
+            alt="Image alt"/>
             <div className={styles.navItems}>
             {renderNavLinks}
             <button>Contact US</button>

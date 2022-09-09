@@ -19,7 +19,9 @@
     gap:2rem;
     cursor: pointer;
 }
-
+.links span:hover{
+    text-decoration: underline;
+}
 
 .social{
     display: flex;

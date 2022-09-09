@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/home.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 
 export default function Home() {
@@ -23,15 +25,21 @@ export default function Home() {
         </div>
 
         <div className={styles.imageSection}>
-          <img src='/illustration1.png' />
+          {/* <img src='/illustration1.png' /> */}
+          <LazyLoadImage src = '/illustration1.png' width={992}  height={684}
+         placeholderSrc='/low/illustration1.avif'
+         alt="Image alt"/>
         </div>
       </div>
      
     {/* Another Section */}
       <div className={styles.about}>
           <div>
-            <img src='/illustration2.png' />
-          </div>
+            {/* <img src='/illustration2.png' /> */}
+            <LazyLoadImage src = '/illustration2.png' 
+             placeholderSrc='/low/illustration2.avif'
+             alt="Image alt"/>
+            </div>
           
           <div className={styles.text}>
             <h2>What is Covid-19</h2>
