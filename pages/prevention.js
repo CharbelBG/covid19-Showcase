@@ -27,7 +27,7 @@ export default function prevention(){
                      Objectively '/>
 
                     <LazyLoadImage src ='/illustration8.png' width={480} height={516}
-                    placeholderSrc='/low/illustration.avif' />
+                    placeholderSrc='/low/illustration8.avif' />
                 </div>
 
                 <div className={styles.textAndImg}>
