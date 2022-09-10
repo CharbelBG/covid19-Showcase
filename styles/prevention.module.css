@@ -1,6 +1,7 @@
 .prevention{
     margin-bottom: 60px;
     position: relative;
+    overflow: hidden;
 }
 .textAndImg{
     display:flex;
