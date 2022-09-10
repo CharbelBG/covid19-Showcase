@@ -15,7 +15,7 @@ export default function NavItems(){
             </Link>
         )
     })
-
+    
     return(
         <nav className={styles.nav}>
             <LazyLoadImage src = '/Logo.png'
@@ -23,8 +23,8 @@ export default function NavItems(){
             alt="Image alt"/>
             <div className={styles.navItems}>
             {renderNavLinks}
-            <button>Contact US</button>
             </div>
+            <button>Contact US</button>
         </nav>
     )
 

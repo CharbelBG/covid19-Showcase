@@ -2,15 +2,17 @@
     margin-bottom: 60px;
     position: relative;
     overflow: hidden;
+    position: relative;
 }
 .textAndImg{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
 .textAndImg:not(:first-of-type){
-    margin-bottom: -50px;
+    margin-bottom: -50px;   
 }
 .textAndImg img{
     width: 30rem;
@@ -22,8 +24,33 @@
 }
 .backgroundImg2{
     position: absolute;
-    right: 0;
     bottom:400px;
     right: -100px;
     height: 20rem;
+}
+@media screen and (max-width:650px) {
+    .textAndImg{
+        flex-direction: column;
+        justify-content: center;
+        gap:50px;
+        align-items: center;
+        margin-top: 35px;
+    }
+    .textAndImg:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    .textAndImg img{
+        margin-left: 4rem;
+        width: 75%;
+        height: 75%;
+        object-fit: scale-down;
+    }
+    .backgroundImg:first-of-type{
+        position: absolute;
+        height: 10rem;
+        left:-85px;
+        top: 1000px;;
+        width: fit-content;
+        object-fit: scale-down;
+    }
 }

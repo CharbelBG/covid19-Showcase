@@ -57,3 +57,17 @@
     position: absolute;
     bottom: -100px;
 }
+@media screen and (max-width:650px) {
+    .cardsWrapper{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        width: 95%;
+    }
+    .background{
+        z-index: -12;
+        position: absolute;
+        bottom:-230px;
+    }
+}

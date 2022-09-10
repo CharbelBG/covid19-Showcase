@@ -24,7 +24,7 @@ export default function Home() {
         <button>Let Us Help</button>
         </div>
 
-        <div className={styles.imageSection}>
+        <div className={styles.imageSection}> 
           <LazyLoadImage src = '/illustration1.png' width={880} height={607}
          placeholderSrc='/low/illustration1.avif'
          alt="Image alt"/>
@@ -32,7 +32,7 @@ export default function Home() {
       </div>
     
       <div className={styles.about}>
-          <div>
+          <div className={styles.aboutImage}>
             <LazyLoadImage src = '/illustration2.png' width={400} height={427} 
              placeholderSrc='/low/illustration2.avif'
              alt="Image alt"/>

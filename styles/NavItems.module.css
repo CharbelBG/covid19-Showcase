@@ -62,3 +62,28 @@
     background-color: var(--redColor);
     transition: .2s;
 }
+@media screen and (max-width:650px){
+    .nav{
+        font-size: smaller;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        margin-bottom: 4rem;
+    }   
+
+    .navItems{
+        gap:1rem;
+        font-size: medium;
+        position: absolute;
+        bottom: -30px;
+    }
+    .nav button{
+       width: 5rem;
+       font-size: smaller;
+       padding: .3rem;   
+    }
+    .nav img{
+        height: 30px;
+    }
+
+}
