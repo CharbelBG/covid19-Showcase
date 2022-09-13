@@ -21,12 +21,20 @@ export default function Home(){
         <meta name='keywords' content='covid-19, virus, awareness against covid-19, symptoms' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* need to be spreaded out as components. */}
+
       <Overview />
-      <About />
-      <Contagion />
-      <Symptoms />
+      <section id='overview'>
+        <About />
+      </section>
+      <section id='contagion'>
+        <Contagion />
+      </section>
+      <section id='symtoms'>
+        <Symptoms />
+      </section>
+      <section id='prevention'>
       <Prevention />
-      {/* add here the contact */}
+      </section>
+      
     </div>
   )}

@@ -7,19 +7,20 @@
     position: relative;
 }
 .titleAndNumber h1::before{
+    font-family: redhat;
     content: attr(data-before);
     position: absolute;
     color: var(--redColor);
     left:-65px;
     background-color: var(--lightRedColor);
     padding: .2rem;
-    width: 3.4rem;
-    height: 3.4;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     text-align: center;
 }   
 .preventionText p{
     color: var(--lightDarkColor);
     font-size: medium;
-    line-height: 2;
+    line-height: 2.2;
 }

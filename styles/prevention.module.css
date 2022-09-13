@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     position: relative;
-    /* border:2px solid cyan; */
+    
 }
 .textAndImg{
     margin: auto;
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-around;
     position: relative;
-} 
+}   
 .image{
     max-width: 30%;
 }
@@ -27,11 +27,10 @@
     max-width: 100%;
     max-height: 100%;
     width: 15%;
-    /* border: 2px solid blue; */
+  
 }
-/* :first-of-type */
+
 .backgroundImgWrapper{
-    /* border:2px solid red; */
     position: absolute;
     width: fit-content;
     left:-5%;

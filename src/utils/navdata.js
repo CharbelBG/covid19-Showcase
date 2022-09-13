@@ -1,19 +1,19 @@
 export const NavLinks = [
     {
         name:'Overview',
-        path:'/',
+        path:'#overview',
     },
     {
         name:'Contagion',
-        path:'/contagion',
+        path:'#contagion',
     },
     {
         name:'Symptoms',
-        path:'/symptoms',
+        path:'#symtoms',
     },
     {
         name:'Prevention',
-        path:'/prevention',
+        path:'#prevention',
     },
 ]
   
