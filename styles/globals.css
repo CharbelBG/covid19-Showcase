@@ -2,6 +2,14 @@
   font-family: 'Gelion';
   src: url('../assets/Gelion Regular.ttf');
 }
+@font-face {
+  font-family: 'redhat';
+  src: url('../assets/RedHatText-Medium.otf');
+}
+@font-face {
+  font-family: 'fontAwsome';
+  src: url('../assets/FontAwesome6Free-Regular-400.otf');
+}
 *,*::before,*::after {
   box-sizing: border-box;
   margin: 0;

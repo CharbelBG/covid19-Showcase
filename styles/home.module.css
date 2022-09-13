@@ -6,23 +6,29 @@
     margin-bottom:1rem;
     font-size: larger;
     overflow: hidden;
+    background: rgb(255,241,244);
+    background: linear-gradient(180deg, rgba(255,241,244,1) 12%, rgba(255,255,255,1) 100%);
 }
-.text{  
-    margin-left:250px;
+.text{ 
+    margin-left:11%;    
     display: flex;
     flex-direction: column;
-    min-width: 28rem;
+    min-width: 35rem;
     gap:.5rem;
     color: var(--lightDarkColor);
+    font-size:larger;
 }
 .text h3, .text h2 , .aboutText h3{
+    font-family: redhat;  
     color: var(--redColor);
 }
 .text h1, .aboutText h1{
+    font-family: redhat;  
     color: var(--greenColor);
 }
 .text p{
-    font-size: medium;
+    font-size: large;
+    line-height: 2;
 }
 .text button{
     margin-top: 2rem;
@@ -46,24 +52,34 @@
 }
 
 .imageSection{
+    width: 100%;
     position: relative;
-    right:-50px;
+    right:0px;
+}
+.imageSection img{
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
 
-
 .about{
+    margin-top: 2rem;
+    font-size: large;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:10rem;
+    gap:12rem;
     background-image: url('../public/illustration3.png');
     background-repeat: no-repeat;
     background-size: 12rem;
     background-position: 106% 100%;
 }
 .aboutText{
-    max-width: 31rem;
+    max-width: 34.5rem;
+    display: flex;  
+    flex-direction: column;
+    gap:.5rem;
 }
 .aboutText p{
     line-height: 2;
@@ -86,50 +102,11 @@
    background-color: var(--redColor);
    transition: .2s;
 }
-.about img{
-    height: 25rem;
+.aboutImage{
+    width: 35%;
 }
-@media screen and (max-width:650px) {
-    .main{
-        flex-direction: column;
-        width: 100%;
-        overflow: visible;
-    }
-    .text{
-        font-size: smaller;
-        margin:auto;
-        width: 85%;
-    }
-    .imageSection{ 
-        right: 0;
-        width:100%;
-        height: 350px;
-        overflow: hidden;
-    }
-    .imageSection img{
-        margin: auto;
-        margin-top: 1rem;
-        width: 55%;
-        height: 55%;
-        object-fit: scale-down;
-    }
-    .text button{
-        width: 8rem;
-        font-size: medium;
-    }
-    .about{
-        gap:0;
-        flex-direction:column-reverse;
-    }
-    .aboutText{
-       max-width: 20rem;
-    }
-    .about img{
-        height: 15rem;
-        width:15rem;
-        margin-top: 1rem;
-    }
-    .aboutImage{
-        height:300px;
-    }
+.aboutImage img{
+    max-width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }

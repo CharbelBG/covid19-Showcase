@@ -5,7 +5,9 @@ export default function PreventionText(props){
 
     return(
         <div className={styles.preventionText}>
-           <h1 data-before={props.number}>{props.title}</h1>
+            <div className={styles.titleAndNumber}>
+            <h1 data-before={props.number}>{props.title}</h1>
+            </div>
            <p>{props.paragraph}</p>
         </div>
     )

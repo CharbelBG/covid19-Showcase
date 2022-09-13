@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from '../styles/contagion.module.css';
+import styles from '../../styles/contagion.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import SectionHeader from '../src/components/SectionHeader';
+import SectionHeader from './SectionHeader';
 
 export default function contagion(){
     return(
         <div>
             <SectionHeader title='Contagion'
-             paragraph='Corona viruses are a type of virus. There are many different kinds, 
-             and some cause disease. A newly identified type' />
+             paragraph= {['Corona viruses are a type of virus. There are many different kinds, and'
+             , <br />,'some cause disease. A newly identified type' ]} />
             <div className={styles.cardsWrapper}>
                 <div className={styles.card}>
                 <LazyLoadImage src = '/illustration4.png' width={269.5} height={256}
@@ -37,10 +37,10 @@ export default function contagion(){
                     Use the tissue while sneezing,In this way, you can protect your droplets.
                     </p>
                 </div>
-            </div>
             
             <LazyLoadImage className={styles.background} src = '/background.png' width={250} height={250}
              placeholderSrc='/low/background.avif' />
+             </div>
 
         </div>
     )
