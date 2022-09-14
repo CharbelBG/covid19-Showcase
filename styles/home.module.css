@@ -16,9 +16,10 @@
     min-width: 35rem;
     gap:.5rem;
     color: var(--lightDarkColor);
-    font-size:larger;
+    font-size:x-large;
 }
 .text h3, .text h2 , .aboutText h3{
+    font-size: large;
     font-family: redhat;  
     color: var(--redColor);
 }
@@ -80,6 +81,9 @@
     display: flex;  
     flex-direction: column;
     gap:.5rem;
+}
+.aboutText h1{
+    font-size: xx-large;
 }
 .aboutText p{
     line-height: 2;

@@ -21,8 +21,9 @@ export default function Home(){
         <meta name='keywords' content='covid-19, virus, awareness against covid-19, symptoms' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Overview />
+      <section>
+        <Overview />
+      </section>
       <section id='overview'>
         <About />
       </section>

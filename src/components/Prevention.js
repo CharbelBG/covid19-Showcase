@@ -1,14 +1,17 @@
 import React from 'react';
 import styles from '../../styles/prevention.module.css';
-import SectionHeader from './SectionHeader';
 import PreventionText from './PreventionText';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-export default function prevention(){
+import { nanoid } from 'nanoid';
+export default function Prevention(){
     return(
-        <div className={styles.prevention}>
-            <SectionHeader title='What Should We Do'
-            paragraph={['Corona viruses are a type of virus. There are many different kinds, and some cause',<br />,'disease. A newly identified type has caused']} />
+        <div className={styles.prevention} >
+             <div className='sectionHeader'>
+                <h3>Covid-19</h3>
+                <h1>What Should We Do</h1>
+                <p>Corona viruses are a type of virus. There are many different kinds, and some cause 
+                    <br /> disease. A newly identified type has caused</p>
+             </div>
                 <div className={styles.textAndImg}>
                     <PreventionText number='01' 
                     title='Wear Masks'

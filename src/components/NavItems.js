@@ -10,7 +10,7 @@ export default function NavItems(){
    
     const renderNavLinks = NavLinks.map((link,index)=>{
         return (
-            <Link href ={link.path} key = {index}>
+            <Link href ={link.path} key={index}>
             <div  className={router.pathname === link.path ? (styles.active) : ''}>{link.name}</div>
             </Link>
         )
