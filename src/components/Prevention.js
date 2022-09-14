@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '../../styles/prevention.module.css';
 import PreventionText from './PreventionText';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { nanoid } from 'nanoid';
 export default function Prevention(){
     return(
         <div className={styles.prevention} >
