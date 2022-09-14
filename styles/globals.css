@@ -49,3 +49,37 @@
   line-height: 2;
   color: var(--lightDarkColor);
 }
+
+
+
+
+
+.preventionText{
+  max-width: 29rem;
+  font-size: larger;
+}
+.preventionText h1{
+  color: var(--greenColor);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.titleAndNumber h1::before{
+  font-family: redhat;
+  content: attr(data-before);
+  position: absolute;
+  color: var(--redColor);
+  left:-80px;
+  background-color: var(--lightRedColor);
+  padding: .3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}   
+.preventionText p{
+  color: var(--lightDarkColor);
+  font-size: medium;
+  line-height: 2.2;
+}

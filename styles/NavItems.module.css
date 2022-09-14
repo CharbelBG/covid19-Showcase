@@ -38,15 +38,12 @@
     top:150%;
     right: 50%;
     opacity: 1;
+    transition: .1s;
+}
+.navItems div:hover{
+    color: var(--redColor);
     transition: .2s;
 }
- 
-.active{
-    color: var(--redColor);
-    position: relative;
-}
-
-
 .nav button{
     color:var(--redColor);
     background-color: transparent;

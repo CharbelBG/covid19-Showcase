@@ -2,16 +2,15 @@ import React from 'react';
 import {NavLinks} from '../utils/navdata';
 import Link from 'next/link';
 import styles from '../../styles/NavItems.module.css';
-import { useRouter } from 'next/router';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function NavItems(){
-    const router = useRouter();
+ 
    
     const renderNavLinks = NavLinks.map((link,index)=>{
         return (
             <Link href ={link.path} key={index}>
-            <div  className={router.pathname === link.path ? (styles.active) : ''}>{link.name}</div>
+            <div>{link.name}</div>
             </Link>
         )
     })

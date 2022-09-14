@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../styles/prevention.module.css';
-import PreventionText from './PreventionText';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Prevention(){
     return(
@@ -11,11 +10,15 @@ export default function Prevention(){
                 <p>Corona viruses are a type of virus. There are many different kinds, and some cause 
                     <br /> disease. A newly identified type has caused</p>
              </div>
-                <div className={styles.textAndImg}>
-                    <PreventionText number='01' 
-                    title='Wear Masks'
-                    paragraph='Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively' />
-                    
+
+                    <div className={styles.textAndImg}>
+                        <div className='preventionText'>
+                        <div className='titleAndNumber'>
+                        <h1 data-before='01'>Wear Masks</h1>
+                        </div>
+                        <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively</p>
+                    </div>
+
                     <div className={styles.image}>
                         <LazyLoadImage src ='/illustration8.png' 
                         placeholderSrc='/low/illustration8.avif' />
@@ -27,23 +30,36 @@ export default function Prevention(){
                     <LazyLoadImage src ='/illustration9.png'  
                     placeholderSrc='/low/illustration9.avif' />
                     </div>
+            
 
-                    <PreventionText number='02' 
-                    title='Wash Your Hands'
-                    paragraph='Continually seize impactful vortals 
-                    rather than future-proof supply chains. Uniquely exploit emerging niches 
-                    via fully tested meta-services. Competently pursue standards compliant 
-                    leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively
-                     Continually seize impactful vortals'/>
+                     <div className='preventionText'>
+                        <div className='titleAndNumber'>
+                        <h1 data-before='02'>Wash Your Hands</h1>
+                        </div>
+                        <p>Continually seize impactful vortals 
+                        rather than future-proof supply chains. Uniquely exploit emerging niches 
+                        via fully tested meta-services. Competently pursue standards compliant 
+                        leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively
+                        Continually seize impactful vortals</p>
+                    </div>
+
+
                 </div>
 
                 <div className={styles.textAndImg}>
-                    <PreventionText number='03' 
-                    title='Use Nose - Rag'
-                    paragraph='Continually seize impactful vortals rather than future-proof supply chains. 
-                    Uniquely exploit emerging niches via fully tested meta-services. Competently 
-                    pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" 
-                    thinking. Objectively '/>
+
+
+                    <div className='preventionText'>
+                        <div className='titleAndNumber'>
+                        <h1 data-before='03'>Use Nose - Rag</h1>
+                        </div>
+                        <p>Continually seize impactful vortals rather than future-proof supply chains. 
+                        Uniquely exploit emerging niches via fully tested meta-services. Competently 
+                        pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" 
+                        thinking. Objectively</p>
+                    </div>
+
+
                     <div className={styles.image}>
                         <LazyLoadImage src ='/illustration10.png'  
                         placeholderSrc='/low/illustration10.avif' />
@@ -57,12 +73,16 @@ export default function Prevention(){
                         placeholderSrc='/low/illustration11.avif' />
                     </div>
 
-                    <PreventionText number='04' 
-                    title='Avoid Contacts'
-                    paragraph='Continually seize impactful vortals rather than 
-                    future-proof supply chains. Uniquely exploit emerging niches via
-                     fully tested meta-services. Competently pursue standards compliant
-                      leadership skills vis-a-vis pandemic'/>
+                      <div className='preventionText'>
+                        <div className='titleAndNumber'>
+                        <h1 data-before='04'>Avoid Contacts</h1>
+                        </div>
+                        <p>Continually seize impactful vortals rather than 
+                         future-proof supply chains. Uniquely exploit emerging niches via
+                         fully tested meta-services. Competently pursue standards compliant
+                         leadership skills vis-a-vis pandemic</p>
+                    </div>
+
                 </div>
                 
                 <div className={styles.backgroundImgWrapper}>
