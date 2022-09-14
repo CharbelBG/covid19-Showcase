@@ -89,9 +89,6 @@ export default function Prevention(){
                     <LazyLoadImage className={styles.backgroundImg} src ='/background2.png' 
                     placeholderSrc='/low/background2.avif' />
                  </div>
-
-                  <LazyLoadImage className={styles.backgroundImg2} src ='/background3.png'
-                 placeholderSrc='/low/background3.avif' />
         </div>
     )
 }

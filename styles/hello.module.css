@@ -1,0 +1,17 @@
+.helloWrapper{
+    background-color: var(--lightDarkColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    background-color: white;
+    width: fit-content;
+    padding:2rem;
+    border-radius:1.5rem;
+    font-size: large;
+}
+.text a{
+    color: var(--greenColor);
+}

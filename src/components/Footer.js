@@ -23,7 +23,7 @@ export default function Footer(){
                 {renderNavLinks}
                </div>
                <div>
-                  <p>2020 @ All right reseved by pixelspark.co</p>
+                  <p>2020 @ All right reseved by Chabrel Bou Ghazalé</p>
                </div>
            </div>
            <div className={styles.social}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-
-
+import NavItems from '../src/components/NavItems';
+import Footer from '../src/components/Footer';
 import Overview from '../src/components/Overview';
 import About from '../src/components/About';
 import Contagion from '../src/components/Contagion';
@@ -20,6 +20,7 @@ export default function Home(){
         <meta name='keywords' content='covid19, virus, awareness against covid19, symptoms' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavItems />
       <section>
         <Overview />
       </section>
@@ -38,5 +39,6 @@ export default function Home(){
       <section id = 'contact'>
         <Contact />
       </section>
+    <Footer />
     </div>
   )}

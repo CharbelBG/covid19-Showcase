@@ -51,6 +51,9 @@
 .links span{
     margin: 1rem;
 }
+.links p{
+    color: var(--lightGreenColor);
+}
 .social{
     display: flex;
     flex-direction: row;
@@ -83,6 +86,4 @@
         width: 30px;
         object-fit: scale-down;
     }
-  
-
 }
