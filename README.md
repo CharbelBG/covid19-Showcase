@@ -1,4 +1,4 @@
-# Covid19 Project
+# Covid19 Showcase
 
 This Project was developed to help  spreading awareness against covid19.
 
