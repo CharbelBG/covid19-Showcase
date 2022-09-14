@@ -1,5 +1,6 @@
 .footerWrapper{
-    padding-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -64,26 +65,4 @@
     height:1rem;
     width: auto;
     cursor: pointer;
-}
-
-@media screen and (max-width:650px) {
-    .footerWrapper{
-        margin-top: 1rem;
-        font-size: smaller;
-        gap:1rem;
-    }
-    .footer{
-        flex-direction: column;
-        gap:2rem;
-    }
-    .social, .links{
-        flex-direction: row;
-    }
-    .footer img{
-        width: 100px;
-    }
-    .social img{
-        width: 30px;
-        object-fit: scale-down;
-    }
 }
