@@ -23,7 +23,8 @@ export default function NavItems(){
             alt="Image alt"/>
             <div className={styles.navItems}>
             {renderNavLinks}
-            <button>Contact</button>
+            <Link href='#contact'><button>Contact</button></Link>
+            
             </div>
         </nav>
     )

@@ -1,0 +1,61 @@
+.wrapper{
+    background: rgb(255,241,244);
+    background: linear-gradient(0deg, rgba(255,241,244,1) 20%, rgba(255,255,255,1) 80%);
+    padding-bottom: 2rem;
+    position: relative;
+}
+.contact{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    color: var(--contactGreenColor);
+}
+.contact h1{
+    margin-bottom:1rem ;
+}
+.inputContainer{
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    padding:.7rem;
+    justify-content:space-between;
+    border-radius:15rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.164);
+}
+.inputContainer:focus-within{
+    outline: 2px solid var(--redColor);
+}
+.inputContainer input{
+    border: none;
+    padding:1rem;
+    width: 70%;
+    outline: none;
+}
+.inputContainer button{
+    padding:1rem;
+    padding-left:3rem;
+    padding-right: 3rem;
+    border-radius: 15rem;
+    font-size: large;
+    border: none;
+    background-color: var(--redColor);
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+.inputContainer button:hover{
+    color: var(--redColor);
+    background-color: var(--lightRedColor);
+    transition: .2s;
+}
+.imgWrapper{
+    position: absolute;
+    right: 0;
+    top: -10%;
+    width:15% ;
+}
+.imgWrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}

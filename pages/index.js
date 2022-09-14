@@ -7,7 +7,7 @@ import About from '../src/components/About';
 import Contagion from '../src/components/Contagion';
 import Symptoms from '../src/components/Symptoms';
 import Prevention from '../src/components/Prevention';
-
+import Contact from '../src/components/Contact';
 export default function Home(){
   return (
     <div>
@@ -33,8 +33,10 @@ export default function Home(){
         <Symptoms />
       </section>
       <section id='prevention'>
-      <Prevention />
+        <Prevention />
       </section>
-      
+      <section id = 'contact'>
+        <Contact />
+      </section>
     </div>
   )}

@@ -1,21 +1,30 @@
 import React from 'react';
 import styles from '../../styles/footer.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Link from 'next/link';
+import { NavLinks } from '../utils/navdata';
 export default function Footer(){
+    const renderNavLinks = NavLinks.map((link,index)=>{
+        return (
+            <Link href ={link.path} key={index}>
+            <span>{link.name}</span>
+            </Link>
+        )
+    })
     return(
     <div className={styles.footerWrapper}>  
       
         <div className={styles.footer}>
-           <div>
-                <LazyLoadImage src = '/Logo.png'
-                placeholderSrc='/low/Logo.avif'
-                alt="Logo"/>
+           <div className={styles.imageWrapper}>
+               Covid-19
             </div>
            <div className={styles.links}>
-                <span>Overview</span>
-                <span>Symptoms</span>
-                <span>Prevention</span>
-                <span>Treatment</span>
+               <div>
+                {renderNavLinks}
+               </div>
+               <div>
+                  <p>2020 @ All right reseved by pixelspark.co</p>
+               </div>
            </div>
            <div className={styles.social}>
                 <LazyLoadImage src = '/f.png'
@@ -35,7 +44,7 @@ export default function Footer(){
                 alt="twitter"/>
            </div>
         </div>
-           <p>2020 @ All right reseved by pixelspark.co</p>
+        
     </div>
     )
 } 

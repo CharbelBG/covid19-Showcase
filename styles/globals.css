@@ -18,9 +18,10 @@
 }
 :root{
   --greenColor: #035755;
+  --lightGreenColor: #415E56;
+  --contactGreenColor:#0C6C44;
   --redColor: #FB4C47;
   --lightRedColor: #fa555242;
-  --lightGreenColor: #415E56;
   --lightDarkColor:#4B4F51;
 } 
 
